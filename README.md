@@ -25,8 +25,7 @@ lim ios create --attach --reuse-if-exists --label demo=agent-loop
 
 lim ios element-tree --json
 lim ios tap-element --ax-unique-id forgotPasswordLink
-lim ios tap-element --ax-unique-id emailField
-lim ios type "test@example.com"
+lim ios set-text "test@example.com" --ax-unique-id emailField
 lim ios tap-element --ax-unique-id sendResetButton
 lim ios screenshot ./after-submit.png
 
