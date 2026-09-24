@@ -58,4 +58,4 @@ lim xcode delete
 lim xcode test . --scheme sample-agent-loop
 ```
 
-Launches the app and checks that "Hello, world!" appears.
+Launches the app and checks that the sign-in screen appears.

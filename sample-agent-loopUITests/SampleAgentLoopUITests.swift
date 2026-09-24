@@ -1,9 +1,10 @@
 import XCTest
 
 final class SampleAgentLoopUITests: XCTestCase {
-    func testGreetingIsVisible() {
+    func testSignInScreenIsVisible() {
         let app = XCUIApplication()
         app.launch()
-        XCTAssertTrue(app.staticTexts["Hello, world!"].waitForExistence(timeout: 10))
+        XCTAssertTrue(app.staticTexts["Agent Loop"].waitForExistence(timeout: 10))
+        XCTAssertTrue(app.buttons["forgotPasswordLink"].exists)
     }
 }
